@@ -24,3 +24,13 @@ alias gc='git commit'
 
 export PATH="~/.local/bin:$PATH"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+module load open_mpi/1.6.5
+module load git/2.11.0
+# openblas and sqlite apparently needed for Python
+# loading them manually prevents an extra print
+module load new openblas/0.2.13_seq sqlite/3.15.0 gcc/4.8.2 python/3.6.0
+alias vim=nvim
+VIRTUAL_ENV_DISABLE_PROMPT=1 source ~/.venv/bin/activate
+# makes ls colors more readable
+eval "$(dircolors -b)"
