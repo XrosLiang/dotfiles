@@ -9,7 +9,7 @@ if [[ $DIR == "" ]]; then
 fi
 
 if [[ "$PORT" == "" ]]; then
-    PORT=6006
+    PORT=7007
 fi
 if [[ ! -d "$DIR" ]]; then
     echo "Error: '$DIR' does not exist" >&2
