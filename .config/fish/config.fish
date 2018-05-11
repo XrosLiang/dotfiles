@@ -24,6 +24,8 @@ alias fl='floyd logs -t'
 alias fs='floyd status'
 alias fr='floyd run --tensorboard --env tensorflow-1.5'
 
+alias e='ssh -YCL 7007:localhost:7007 mrahtz@euler.ethz.ch'
+
 if not set -q -U fish_user_paths
   set -U fish_user_paths "$HOME/.local/bin"
   if test $_platform = "darwin"
