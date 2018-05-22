@@ -1,27 +1,27 @@
-abbr gwd 'git diff --word-diff=color'
-abbr gwdc 'git diff --word-diff=color --cached'
-abbr gpl 'git pull'
-abbr gps 'git push'
-abbr gc 'git commit'
-abbr gco 'git checkout'
-abbr gcm 'git commit -m'
-abbr gca 'git commit --amend'
-abbr ga 'git add'
-abbr gs 'git status'
-abbr gr 'git rev-parse --short HEAD'
-abbr gb 'git branch'
+alias gwd='git diff --word-diff=color'
+alias gwdc='git diff --word-diff=color --cached'
+alias gpl='git pull'
+alias gps='git push'
+alias gc='git commit'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias ga='git add'
+alias gs='git status'
+alias gr='git rev-parse --short HEAD'
+alias gb='git branch'
+alias gcp='git cherry-pick'
 
-abbr f 'find . -iname'
-abbr g grep
-abbr gv 'grep -v'
+alias f='find . -iname'
+alias g=grep
+alias gv='grep -v'
 
-abbr p8 'ping 8.8.8.8'
+alias p8='ping 8.8.8.8'
 
-abbr py python
+alias py=python
 
-abbr fl 'floyd logs -t'
-abbr fs 'floyd status'
-abbr fr 'floyd run --tensorboard --env tensorflow-1.5'
+alias fl='floyd logs -t'
+alias fs='floyd status'
 
 if not set -q -U fish_user_paths
   set -U fish_user_paths "$HOME/.local/bin"
