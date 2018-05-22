@@ -34,3 +34,6 @@ if not set -q -U fish_user_paths
     set -U fish_user_paths $fish_user_paths "$HOME/Library/Python/3.6/bin"
   end
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/matthew/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/matthew/google-cloud-sdk/path.fish.inc'; else; . '/Users/matthew/google-cloud-sdk/path.fish.inc'; end; end
