@@ -37,3 +37,5 @@ alias vim=nvim
 VIRTUAL_ENV_DISABLE_PROMPT=1 source ~/.venv/bin/activate
 # makes ls colors more readable
 eval "$(dircolors -b)"
+
+export PYTHONUNBUFFERED=1
