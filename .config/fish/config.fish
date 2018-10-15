@@ -28,6 +28,8 @@ alias e='ssh -YCL 7007:localhost:7007 mrahtz@euler.ethz.ch'
 
 alias vim=nvim
 
+alias r='rsync -av'
+
 if not set -q -U fish_user_paths
   set -U fish_user_paths "$HOME/.local/bin"
   if test $_platform = "darwin"
